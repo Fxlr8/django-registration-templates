@@ -21,5 +21,8 @@ Then move the registration directory to your templates directory:
 
 		cd django-registration-templates
 		mv registration path/to/your/templates/
+        
+All templates inherit from `base_registration.html` which inherits from `base.html` to allow more convenience
+now you can simply set wrapping html to all of your forms without editing each and every one and without messing with base.html
 
 `base.html` and `index.html` are also included but most likely, you'll already have those present in your templates directory.
